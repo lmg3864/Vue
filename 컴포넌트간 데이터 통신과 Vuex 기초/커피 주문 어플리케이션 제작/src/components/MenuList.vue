@@ -1,11 +1,13 @@
 <template>
   <div class="menu-list">
     <h1>1. 음료를 고르세요.</h1>
-    <menu-list-item
-      v-for="menu in menuList"
-      :key="menu.title"
-      :menu="menu"
-    ></menu-list-item>
+    <div class="menu-box">
+      <menu-list-item
+        v-for="menu in menuList"
+        :key="menu.title"
+        :menu="menu"
+      ></menu-list-item>
+    </div>
   </div>
 </template>
 
@@ -30,8 +32,15 @@ export default {
 
 <style>
 .menu-list {
+  width: 400px;
   padding: 20px;
   background-color: white;
   border-radius: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.menu-box {
+  height: 220px;
+  overflow-y: scroll;
 }
 </style>

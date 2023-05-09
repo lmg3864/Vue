@@ -8,14 +8,15 @@
     </div>
     <div>
       <h1 style="margin-bottom: 20px">주문 내역</h1>
-      <h4>총 {{ totalOrderCount }}건 : {{ totalOrderPrice }}원</h4>
+      <h4 style="margin-bottom: 20px">
+        총 {{ totalOrderCount }}건 : {{ totalOrderPrice }}원
+      </h4>
       <hr />
       <OrderListItem
         v-for="(order, idx) in orderList"
         :key="idx"
         :order="order"
       ></OrderListItem>
-      <hr />
     </div>
   </div>
 </template>
@@ -52,6 +53,7 @@ export default {
   margin-top: 30px;
   padding: 10px;
   background-color: lightgray;
+  border-radius: 10px;
 }
 
 .cart-btn {

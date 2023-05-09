@@ -1,11 +1,11 @@
 <template>
   <div id="app">
-    <h1 class="d-flex justify-content-center" style="margin-top: 100px">
-      Coffee Order App
-    </h1>
+    <img src="@/assets/스타벅스.png" alt="" />
+    <h1 class="d-flex justify-content-center">Coffee Order App</h1>
     <div class="order-board d-flex justify-content-bw">
       <menu-list></menu-list>
       <size-list></size-list>
+      <option-list></option-list>
     </div>
     <OrderList></OrderList>
   </div>
@@ -14,6 +14,7 @@
 <script>
 import MenuList from "@/components/MenuList.vue";
 import SizeList from "@/components/SizeList.vue";
+import OptionList from "@/components/OptionList.vue";
 import OrderList from "@/components/OrderList.vue";
 
 export default {
@@ -22,6 +23,7 @@ export default {
     MenuList,
     SizeList,
     OrderList,
+    OptionList,
   },
 };
 </script>
@@ -32,6 +34,12 @@ export default {
   font-family: "Noto Sans KR", sans-serif;
   padding: 0;
   margin: 0;
+}
+
+#app {
+  text-align: center;
+  width: 1300px;
+  margin: 0 auto;
 }
 
 ul {

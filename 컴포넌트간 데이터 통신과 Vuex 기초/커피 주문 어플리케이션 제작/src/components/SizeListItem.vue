@@ -4,10 +4,10 @@
     :class="{ selected: size.selected }"
     @click="selectSize"
   >
-    <p class="size-item d-flex align-items-center justify-content-center">
+    <p class="item d-flex align-items-center justify-content-center">
       {{ size.name }}
     </p>
-    <div class="size-item d-flex align-items-center justify-content-center">
+    <div class="item d-flex align-items-center justify-content-center">
       {{ size.price }}원
     </div>
   </div>
@@ -28,9 +28,8 @@ export default {
 </script>
 
 <style>
-.size-item {
+.item {
   text-align: center;
   height: 50px;
-  width: 50px;
 }
 </style>
